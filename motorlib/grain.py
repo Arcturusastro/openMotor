@@ -39,7 +39,7 @@ class Grain(PropertyCollection):
     def getWebLeft(self, regDist):
         """Returns the shortest distance the grain has to regress to burn out"""
 
-    def isWebLeft(self, regDist, burnoutThres=0.00001):
+    def isWebLeft(self, regDist, burnoutThres=0.0000001):
         """Returns True if the grain has propellant left to burn after it has regressed a distance of 'regDist'"""
         return self.getWebLeft(regDist) > burnoutThres
 
